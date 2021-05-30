@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 15px;
+}
+img{
+    margin-bottom: 20px;
+}
+h1{
+    margin-bottom: 20px;
+    color: white;
+    font-family:Big Shoulders Display;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: hsl(0, 0%, 95%);
+}
+p{
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 1rem;
+    padding-right: 40px;
+    font-family: Lexend Deca;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+button{
+    background-color:hsl(0, 0%, 95%);
+    border-style: none;
+    border-radius: 30px;
+    padding: 15px;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    font-family: Lexend Deca;
+    cursor: pointer;
+}
+.btn1{
+    color: hsl(31, 77%, 52%);
+}
+.btn2{
+    color:hsl(184, 100%, 22%);
+}
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+.container{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+}
+.box1{
+    background-color:hsl(31, 77%, 52%);
+    width: 100%;
+    height: auto;
+    padding:40px;
+    border-top-left-radius:5px ;
+    border-top-right-radius: 5px;
+}
+.box2{
+    background-color:hsl(184, 100%, 22%);
+    width: 100%;
+    height: auto;
+    padding:40px;
+}
+.box3{
+    background-color:hsl(179, 100%, 13%);
+    width: 100%;
+    height: auto;
+    padding:40px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius:5px ;
+}
+.attribution{
+    width: 100%;
+    font-size: 11px;
+    font-family: Lexend Deca;
+    text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); 
+}
+
+/*media queries*/
+
+@media screen and (min-width:500px){
+    body{
+        padding: 45px 90px;
+    }
+    .container{
+        flex-direction: row;
+    }
+    button{
+        margin-top: 50px;
+    }
+    .box1{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+    }
+    .box3{
+        border-top-right-radius:5px;
+        border-bottom-left-radius:0;
+    }
+}
+@media screen and (min-width:376px) and (max-width:972px){
+    p{
+        padding-right: 0px;
+    }
+    .btn2{
+        margin-top: 25px;
+    }
+    .attribution{
+        text-align:center;
+    }
+    body{
+        padding: 5px;
+        padding-top: 80px;
+    }
+}
